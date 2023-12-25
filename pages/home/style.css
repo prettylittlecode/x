@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #1D9BF0;
+    --blueDark: #0984d6;
+    --black: #0F1419;
+    --gray: #EFF3F4;
+    --grayDark: #e2e3e3;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--black);
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    display: inline-block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.profile-name {
+    font-size: 0.9rem;
+    color: var(--black)
+}
+
+.small-text {
+    font-size: 0.8rem;
+    color: gray
+}
+
+
+
+/* Main wrapper style */
+.main-wrapper {
+    width: min(95%, 1300px);
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Left Nav Menu Styles */
+
+.logo-img {
+    width: 1.7rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.logo-img:hover{
+    background-color: var(--grayDark);
+    
+}
+
+
+.nav-links li{
+    font-size: 1.2rem;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav-links li:hover {
+    background-color: var(--grayDark);
+    border-radius: 2rem;
+}
+
+.logo-and-navigation{
+    position: fixed;
+}
+
+
+.logo-and-navigation{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.new-tweet-from-nav {
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--blue);
+    color: white;
+    font-size: 1rem;
+    width: 250px;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.new-tweet-from-nav:hover {
+    background-color: var(--blueDark);
+}
+
+.left-nav {
+    display: flex;
+    flex: 1 0 23%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 97vh; */
+}
+
+
+
+/* left menu - profile section */
+.profile-left-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    position: fixed;
+    bottom: 10px;
+    width: 250px;
+    
+}
+
+.profile-left-menu:hover {
+    background-color: var(--grayDark);
+    border-radius: 3rem;
+}
+
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px
+}
+
+.profile-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    
+}
+
+.fullname-left-menu {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+}
+
+.username-left-menu{
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  main content style ----------------------------------------  */
+
+.main-content-container {
+    flex: 1 0 50%;
+    /* background-color: gray; */
+    padding-inline: 1rem;
+    
+}
+
+.main-content-container > div {
+    padding: 1rem;
+    border-bottom: 0.5px solid;
+    border-left: 0.5px solid;
+    border-right: 0.5px solid;
+    border-color: rgba(128, 128, 128, 0.2);
+}
+
+.new-tweet-input {
+    padding: 16px;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.profile-tweet-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.profile-tweet-container .profile-img {
+    margin-top: 0.5rem;
+} 
+
+.divider {
+    height: 0.5px;
+    background-color:  rgba(128, 128, 128, 0.4);
+    margin-left: 1rem;
+    
+}
+
+.new-tweet-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.new-tweet-icons {
+    display: flex;
+    gap: 15px;
+    margin-left:1rem;
+    color: var(--blue)
+}
+
+.new-tweet-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1.2rem;
+}
+
+.new-tweet-button {
+    background-color: var(--blue);
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.5;
+
+}
+
+/* main content > feed > tweet */
+
+.tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.figure {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+    padding: 0.5rem;
+}
+
+.figure:hover {
+    background-color: var(--grayDark);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.other-actions {
+    display: flex;
+    gap: 15px;
+    color: gray;
+}
+
+.tweet-text {
+    font-size: 0.9rem;
+}
+
+.tweet-media {
+    width: 100%;
+    border-radius: 1rem;
+    margin-top:1rem;
+}
+
+
+.tweet-main-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    padding-bottom: 1rem;
+}
+
+.tweet-border {
+    border-bottom: 0.5px solid;
+    border-color: rgba(128, 128, 128, 0.2);
+}
+
+.tweet-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feed-main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+/*  right menu style ----------------------------------------  */
+
+.right-content-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 27%;
+    gap: 12px;
+    margin-top: 10px; 
+}
+
+
+.search-bar-input{
+    border: none;
+    padding: 1rem;
+    border-radius: 3rem; 
+    background-color: var(--gray);   
+    width: 100%;
+}
+
+.premium-ads, .trend-main-wrapper, .who-to-follow-main-wrapper  {
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 1rem;
+    /* width: 100%; */
+    background-color: var(--gray);
+}
+
+
+.menu-title {
+    font-size: 1.2rem;
+}
+
+.premium-ads-text {
+    font-size: 0.9rem;
+}
+
+.premium-ads-button span{
+    padding: 0.5rem 1rem;
+    background-color: var(--black);
+    color: white;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+}
+
+.premium-ads-button {
+    margin-bottom: 8px;
+}
+
+
+.trend-piece-unit {
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-piece-main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.row-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trends-more {
+    display: inline;
+    text-align: right;
+    color: gray;
+    width: 2rem;
+}
+
+.display-more {
+    color: var(--blue)
+}
+
+.profile-right-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+
+}
+
+
+
+.profile-wrapper-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+
+/* footer */
+footer * {
+    font-size: 0.75rem;
+    color: gray;
+    
+}
+
+footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch;
+    flex-basis: auto;
+}
+
+footer {
+    margin-bottom: 100px;
+    padding: 16px;
+}
