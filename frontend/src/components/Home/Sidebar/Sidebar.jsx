@@ -29,7 +29,7 @@ function Sidebar() {
               <li onClick={()=> navigate("/home")}><SidebarOption active text="Explore" Icon={HomeIcon}/></li>
               <li><SidebarOption text="Explore" Icon={TagRoundedIcon}/></li>
               <li><SidebarOption text="Notifications" Icon={NotificationsNoneRoundedIcon}/></li>
-              <li> onClick={()=> navigate('/messages')}><SidebarOption text="Messages" Icon={MailOutlineRoundedIcon}/></li>
+              <li onClick={()=> navigate('/messages')}><SidebarOption text="Messages" Icon={MailOutlineRoundedIcon}/></li>
               <li> <SidebarOption text="Bookmarks" Icon={BookmarkBorderRoundedIcon}/></li>
               <li><SidebarOption text="Lists" Icon={ArticleOutlinedIcon}/></li>
               <li onClick={()=> navigate('/profile')}><SidebarOption text="Profile" Icon={PermIdentityOutlinedIcon}/></li>
