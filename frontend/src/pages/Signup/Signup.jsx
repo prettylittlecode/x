@@ -41,8 +41,10 @@ export const Signup = ()=>{
                     <h2>Join Twitter today</h2>
                 </div>
             </div>
+            <div className="signup-box">
+                {/* {signup google and facebook buttons} */}
                 </div>
-             <div className="manual-signup">
+                <div className="manual-signup">
                     <div className="manual-btn">
                         <button onClick={()=>{
                             setPopup(true);
@@ -50,12 +52,14 @@ export const Signup = ()=>{
                     </div>
                     <p>By signing up, you agree to the <span>Terms of Service</span> and <span>Privacy Policy</span>, including <span>Cookie Use</span>.</p>
                 </div>
-              <div className="signin-redirect-box">
+            </div>
+            <div className="signin-redirect-box">
                 <p>Already have an account?</p>
                 <button onClick={()=>{
                     navigate('/signin');
                 }}>Signin</button>
             </div>
+        </div>
         <SignupForm trigger={popup} setTrigger={setPopup}/>
     </div>
 }
