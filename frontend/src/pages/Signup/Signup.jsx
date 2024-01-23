@@ -1,5 +1,5 @@
 import "./signup.css"
-import { Twitter } from '@material-ui/icons';
+import { Twitter } from 'https://pbs.twimg.com/profile_images/1647366627925819393/dx1_x24i_400x400.jpg';
 import { ExternalAuth } from "../../components/auth/ExternalAuth";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
