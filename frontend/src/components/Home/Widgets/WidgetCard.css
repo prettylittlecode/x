@@ -1,0 +1,34 @@
+.widgetCard{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+
+    padding: 9px 15px;
+}
+.widgetCard:hover{
+    background-color: var(--twitter-background);
+}
+.widgetText{
+    width: 70%;
+}
+.widgetImg{
+    width: 68px;
+    /* border: 1px solid teal; */
+    height: 68px;
+    border-radius: 15px;
+    
+}
+.widgetImg>img{
+width: 68px;
+height: 68px;
+object-fit: cover;
+border-radius: 15px;
+}
+.widgetTag{
+    font-size: small;
+}
+.widgetContent{
+    margin-top: 5px;
+    font-weight: 600;
+    color: rgb(15, 20, 25);
+}
