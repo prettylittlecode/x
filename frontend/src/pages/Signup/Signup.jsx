@@ -66,5 +66,9 @@ export const Signup = ()=>{
             </div>
         </div>
         <div SignupForm trigger={popup} setTrigger={setPopup}>
-              <SignupForm trigger={popup} setTrigger={setPopup}/></div>div>
+              <SignupForm trigger={popup} setTrigger={setPopup}/></div>
+        );
+
+    }
+
 }
