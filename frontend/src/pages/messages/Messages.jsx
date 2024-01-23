@@ -8,7 +8,7 @@ import { modelState, ProfileState,TweetPageState } from "../../recoil/modelAtom"
 import { useRecoilState } from "recoil";
 import { CommentModel } from "../../components/Home/Feed/CommentModel";
 import { PostPage } from "../../components/Home/PostPage/PostPage";
-export const ProfilePage = ()=>{
+export const Messages = ()=>{
     const navigate = useNavigate();
     const user = JSON.parse(sessionStorage.getItem('AuthToken'));
     if (!user){
