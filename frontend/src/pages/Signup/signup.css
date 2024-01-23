@@ -36,6 +36,8 @@
   flex-direction: column;
   gap: 2rem;
   width: 40%;
+  margin-top: -10px;
+  padding-top: 15px;
 }
 .head-content {
   height: 35%;
