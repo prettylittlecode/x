@@ -4,7 +4,6 @@ import { ExternalAuth } from "../../components/auth/ExternalAuth";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { SignupForm } from "../../components/auth/ManualSignup";
-
 export const Signup = ()=>{
     const user = JSON.parse(sessionStorage.getItem('AuthToken'));
     const navigate = useNavigate();
@@ -42,7 +41,8 @@ export const Signup = ()=>{
                     <h2>Join Twitter today</h2>
                 </div>
             </div>
-                <div className="manual-signup">
+                </div>
+             <div className="manual-signup">
                     <div className="manual-btn">
                         <button onClick={()=>{
                             setPopup(true);
