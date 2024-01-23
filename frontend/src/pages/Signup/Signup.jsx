@@ -42,6 +42,12 @@ export const Signup = ()=>{
                 </div>
             </div>
             <div className="signup-box">
+                {/* {signup google and facebook buttons} */}
+                <ExternalAuth text="Signup"/>
+                <div className="divider">
+                    <div></div>
+                    <div>or</div>
+                    <div></div>
                 </div>
                 <div className="manual-signup">
                     <div className="manual-btn">
@@ -59,6 +65,6 @@ export const Signup = ()=>{
                 }}>Signin</button>
             </div>
         </div>
-        <div SignupForm trigger={popup} setTrigger={setPopup}>
+        <SignupForm trigger={popup} setTrigger={setPopup}/>
     </div>
 }
