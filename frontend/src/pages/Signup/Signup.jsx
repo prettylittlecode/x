@@ -1,5 +1,6 @@
 import "./signup.css"
 import { Twitter } from '@material-ui/icons';
+import { ExternalAuth } from "../../components/auth/ExternalAuth";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { SignupForm } from "../../components/auth/ManualSignup";
