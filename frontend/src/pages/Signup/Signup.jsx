@@ -42,9 +42,6 @@ export const Signup = ()=>{
                 </div>
             </div>
             <div className="signup-box">
-                {/* {signup google and facebook buttons} */}
-                    <div></div>
-                    <div></div>
                 </div>
                 <div className="manual-signup">
                     <div className="manual-btn">
@@ -62,6 +59,6 @@ export const Signup = ()=>{
                 }}>Signin</button>
             </div>
         </div>
-        <SignupForm trigger={popup} setTrigger={setPopup}/>
+        <div SignupForm trigger={popup} setTrigger={setPopup}>
     </div>
 }
