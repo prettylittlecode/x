@@ -56,7 +56,6 @@ export const Signup = ()=>{
                     navigate('/signin');
                 }}>Signin</button>
             </div>
-        </div>
         <SignupForm trigger={popup} setTrigger={setPopup}/>
     </div>
 }
