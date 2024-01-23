@@ -36,5 +36,15 @@ export const ExternalAuth = ({text})=>{
              alert('user Credentials is wrong');
          }
     }
-    return ()
+    return (
+        <>
+            <div className="signup-btns">
+                <button onClick={googleSignup}>{text} with Google<FcGoogle style={{
+                    width: "25px",
+                    height: "auto",
+                }}/></button>
+                <button onClick={facebookSignup}>{text} With Facebook<FacebookIcon/></button>
+            </div>
+        </>
+    )
 }
