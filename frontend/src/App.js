@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Signup/>}></Route>
         <Route path="/home" element={<Home/>}></Route>
-        <Route path="/messages" element={<Messages/>}></Route>
+        <Route path='/messages' element={<Messages/>}></Route>
         <Route path='/signin' element={<Signin/>}></Route>
         <Route path='/profile' element={<ProfilePage/>}></Route>
         <Route path='/tweet/:id' element={<SingleTweetPage/>}></Route>
