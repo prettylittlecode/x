@@ -51,24 +51,11 @@ export const Signup = ()=>{
                 </div>
                 <div className="manual-signup">
                     <div className="manual-btn">
-                        <button onClick={()=>{
-                            setPopup(true);
-                        }}>Signup with email or phone</button>
-                    </div>
-                    <p>By signing up, you agree to the <span>Terms of Service</span> and <span>Privacy Policy</span>, including <span>Cookie Use</span>.</p>
-                </div>
-            </div>
-            <div className="signin-redirect-box">
-                <p>Already have an account?</p>
-                <button onClick={()=>{
-                    navigate('/signin');
+@@ -59,6 +65,6 @@ export const Signup = ()=>{
                 }}>Signin</button>
             </div>
         </div>
         <div SignupForm trigger={popup} setTrigger={setPopup}>
-              <SignupForm trigger={popup} setTrigger={setPopup}/></div>
-        );
-
-    }
-
+        <SignupForm trigger={popup} setTrigger={setPopup}/>
+    </div>
 }
