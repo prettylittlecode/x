@@ -18,13 +18,10 @@ export const Signup = ()=>{
     return <div className="signup-container">
         <div className="poster">
             <div className="Logo">
-                <Twitter style={
-                    {
-                        color: "#ffffff",
-                        width: "100%",
-                        height: "auto",
-                    }
-                }/>
+                <a href="https://www.ariaplus.net" class="link-flex" style="display: flex;position: fixed;margin-top: 40px;gap: 0px;text-decoration: none;color: white;height: 20px;align-self: center;background: black;">
+          <img class="link-icon" src="https://pbs.twimg.com/profile_images/1647366627925819393/dx1_x24i_400x400.jpg" style="width: 60px;height: 60px;">
+          
+        <p class="link-text" style="color: black;width: 65px;"></p></a>
             </div>
         </div>
         <div className="signup-form-container">
