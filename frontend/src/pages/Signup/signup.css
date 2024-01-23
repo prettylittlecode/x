@@ -259,8 +259,9 @@
     padding: 2rem 5rem;
   }
   .signup-container > div:nth-child(1) {
-    width: 100%;
-    padding: 2rem 5rem;
+   padding: 35px;
+   width: fit-content;
+   height: 830px;
   }
   .popup-form {
     width: 100%;
