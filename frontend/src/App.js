@@ -1,6 +1,7 @@
 import './App.css';
 import { Routes, Route, useNavigate } from "react-router-dom"
 import { Home } from './pages/home/Home';
+import { Messages } from './pages/messages/Messages';
 import { Signin } from './pages/login/Login';
 import { Signup } from './pages/Signup/Signup';
 import { Feed } from './components/Home/Feed/Feed';
