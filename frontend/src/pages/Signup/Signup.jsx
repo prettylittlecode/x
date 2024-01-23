@@ -2,7 +2,7 @@ import "./signup.css"
 import { Twitter } from '@material-ui/icons';
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { SignupForm } from "../../components/auth/ManualSignup";
+import { SignupForm } from "./src/components/auth/ManualSignup";
 export const Signup = ()=>{
     const user = JSON.parse(sessionStorage.getItem('AuthToken'));
     const navigate = useNavigate();
