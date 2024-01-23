@@ -14,12 +14,13 @@ import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCxGhqk5X7ydO3jgsepklxsej8hcb-PlBk",
-  authDomain: "twitter-clone-a7323.firebaseapp.com",
-  projectId: "twitter-clone-a7323",
-  storageBucket: "twitter-clone-a7323.appspot.com",
-  messagingSenderId: "649855340920",
-  appId: "1:649855340920:web:ad762e2a33ccd7415ef88d"
+  apiKey: "AIzaSyA14kuPQ0_XxQFCm0LgbsRgror5jbOstxQ",
+  authDomain: "arpplx.firebaseapp.com",
+  projectId: "arpplx",
+  storageBucket: "arpplx.appspot.com",
+  messagingSenderId: "226615162243",
+  appId: "1:226615162243:web:e01533309e6e225d69b2b6",
+  measurementId: "G-713Z7CPX9X"
 };
 
 // Initialize Firebase
