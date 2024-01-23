@@ -1,0 +1,111 @@
+.tweetBox {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--twitter-background);
+}
+
+.MuiAvatar-img {
+  font-size: 50px;
+}
+
+.tweet_input {
+  display: flex;
+}
+.tweet_input .MuiSvgIcon-root {
+  margin-left: 14px;
+  width: 30px;
+  height: 30px;
+}
+.input-box {
+  width: 85%;
+}
+.tweet_input > div > textarea {
+  border: none;
+  outline: none;
+  padding-top: 12px;
+  font-size: 20px;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  padding-bottom: 0.3rem;
+  min-height: 50px;
+}
+
+.selectedfile-wrapper {
+  width: 90%;
+  position: relative;
+}
+.clear-icon {
+  position: absolute;
+  padding: 0.2rem;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.712);
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.425);
+}
+.selectedfile-wrapper img {
+  max-height: 400px;
+  width: auto;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+.tweetOptions {
+  /* border: 1px solid red; */
+  display: flex;
+  margin-left: 55px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.tweetAttachment {
+  flex: 0.5;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tweetAttachment > div > i {
+  color: var(--twitter-color);
+  font-size: 23px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.tweetAttachment > .MuiSvgIcon-root {
+  color: var(--twitter-color);
+  font-size: 23px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0;
+}
+.tweetAttachment > .MuiSvgIcon-root:hover,
+.tweetAttachment > div > i:hover {
+  background-color: #c8edff;
+}
+.tweetButton > .MuiButton-root {
+  background-color: var(--twitter-color);
+  border-radius: 30px !important;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.tweetButton > button:disabled {
+  background-color: #1f97c7;
+  color: rgba(255, 255, 255, 0.76);
+}
+.tweetAttachment > i {
+  color: var(--twitter-color);
+  font-size: 23px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.tweetAttachment > i:hover {
+  background-color: #c8edff;
+}
+
+.tweetButton > .MuiButton-root:hover {
+  background-color: var(--twitter-color);
+}
