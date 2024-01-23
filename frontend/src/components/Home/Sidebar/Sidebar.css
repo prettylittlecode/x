@@ -1,0 +1,152 @@
+.sidebar {
+  border-right: 1px solid var(--twitter-background);
+  flex: 0.21;
+  /* flex-grow: 0.21; */
+  /* width: 21%; */
+  /* padding-left: 1.5vw; */
+  padding: 1.5rem;
+  padding-top: 0.2rem;
+  padding-right: 0.5rem;
+  color: var(--twitter-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar > div > ul > li {
+  list-style-type: none;
+  display: flex;
+  padding: 0.5rem;
+  padding-left: 0;
+  align-items: center;
+}
+
+.sidebar > div > ul {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar > div > ul > li:hover {
+  /* background-color: rgb(212, 212, 212); */
+  background-color: var(--twitter-background);
+  border-radius: 40px;
+  transition: 150ms ease-out;
+}
+
+.sidebar > div > .MuiSvgIcon-root {
+  font-size: 33px;
+  padding: 1vw;
+  color: var(--twitter-color);
+}
+#sideTweetBtn {
+  background-color: var(--twitter-color);
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 19px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#sideTweetBtn:hover {
+  background-color: var(--twitter-dark-color);
+}
+
+.sidebar div .MuiButtonBase-root {
+  width: 80%;
+  border-radius: 30px;
+  background-color: var(--twitter-color);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.sidebar div .MuiButtonBase-root svg {
+  display: none;
+}
+.logout-sec {
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 0.3rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.logout-bar {
+  flex-grow: 1.5;
+  padding-left: 0.2rem;
+}
+.logout-bar p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.logout-bar p + p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: peru;
+  color: white;
+}
+.user-img h2 {
+  font-weight: 500;
+}
+.user-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.logout-sec:hover {
+  background-color: rgba(0, 0, 0, 0.513);
+  color: rgba(255, 255, 255, 0.822);
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4rem;
+    flex: 0.1;
+  }
+
+  .sidebar div .MuiButtonBase-root {
+    width: 80%;
+    border-radius: 50%;
+    background-color: var(--twitter-color);
+    margin: auto;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+  }
+  .sidebar div .MuiButtonBase-root p {
+    display: none;
+  }
+  .sidebar div .MuiButtonBase-root svg {
+    display: block;
+    margin-left: 0.5rem;
+  }
+  .logout-bar {
+    display: none;
+  }
+  .logout-sec {
+    width: fit-content;
+  }
+  .user-img {
+    width: 50px;
+    height: 50px;
+  }
+}
