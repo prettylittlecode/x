@@ -50,8 +50,7 @@ export const Signup = ()=>{
                     </div>
                     <p>By signing up, you agree to the <span>Terms of Service</span> and <span>Privacy Policy</span>, including <span>Cookie Use</span>.</p>
                 </div>
-            </div>
-            <div className="signin-redirect-box">
+              <div className="signin-redirect-box">
                 <p>Already have an account?</p>
                 <button onClick={()=>{
                     navigate('/signin');
