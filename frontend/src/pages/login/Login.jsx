@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom"
 import { Twitter } from '@material-ui/icons';
 import { MdOutlineClear } from "react-icons/md";
 import { getAuth,signInWithEmailAndPassword } from "firebase/auth"
-import { ExternalAuth } from "../../components/auth/ExternalAuth";
 import "./login.css"
 export const Signin = ()=>{
     const navigate = useNavigate();
@@ -49,9 +48,6 @@ export const Signin = ()=>{
                 <div className="signin-form">
                     <div className="head">
                         <p>Sign in to Twitter</p>
-                    </div>
-                    <div className="ext-auth">
-                        <ExternalAuth text={"Signin"}/>
                     </div>
                     <div className="divider">
                         <div></div>
