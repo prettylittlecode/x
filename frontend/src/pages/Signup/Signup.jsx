@@ -1,6 +1,5 @@
 import "./signup.css"
 import { Twitter } from '@material-ui/icons';
-import { ExternalAuth } from "../../components/auth/ExternalAuth";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { SignupForm } from "../../components/auth/ManualSignup";
@@ -43,7 +42,6 @@ export const Signup = ()=>{
             </div>
             <div className="signup-box">
                 {/* {signup google and facebook buttons} */}
-                <ExternalAuth text="Signup"/>
                 <div className="divider">
                     <div></div>
                     <div>or</div>
