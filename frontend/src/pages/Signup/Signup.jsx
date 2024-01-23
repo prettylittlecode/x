@@ -42,14 +42,6 @@ export const Signup = ()=>{
                     <h2>Join Twitter today</h2>
                 </div>
             </div>
-            <div className="signup-box">
-                {/* {signup google and facebook buttons} */}
-                <ExternalAuth text="Signup"/>
-                <div className="divider">
-                    <div></div>
-                    <div>or</div>
-                    <div></div>
-                </div>
                 <div className="manual-signup">
                     <div className="manual-btn">
                         <button onClick={()=>{
