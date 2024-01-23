@@ -26,10 +26,10 @@ function Sidebar() {
         <div>
           <TwitterIcon style={{marginRight: "-1rem"}}/>
           <ul>
-              <li onClick={()=> navigate("/home")}><SidebarOption active text="Home" Icon={HomeIcon}/></li>
-            <li><SidebarOption text="Explore" Icon={TagRoundedIcon}/></li>
+              <li onClick={()=> navigate("/home")}><SidebarOption active text="Explore" Icon={HomeIcon}/></li>
+              <li><SidebarOption text="Explore" Icon={TagRoundedIcon}/></li>
               <li><SidebarOption text="Notifications" Icon={NotificationsNoneRoundedIcon}/></li>
-              <li><SidebarOption text="Messages" Icon={MailOutlineRoundedIcon}/></li>
+              <li> onclick={()=> navigate('/messages')}><SidebarOption text="Messages" Icon={MailOutlineRoundedIcon}/></li>
               <li> <SidebarOption text="Bookmarks" Icon={BookmarkBorderRoundedIcon}/></li>
               <li><SidebarOption text="Lists" Icon={ArticleOutlinedIcon}/></li>
               <li onClick={()=> navigate('/profile')}><SidebarOption text="Profile" Icon={PermIdentityOutlinedIcon}/></li>
