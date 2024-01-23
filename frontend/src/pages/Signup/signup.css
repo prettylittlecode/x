@@ -44,7 +44,8 @@
   justify-content: space-between;
 }
 .head-content > div:nth-child(2) h1 {
-  font-size: 4rem;
+  font-size: 50px;
+  font-family: helvetica;
 }
 .head-content > div:nth-child(3) h2 {
   font-size: 2rem;
