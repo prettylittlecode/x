@@ -9,7 +9,7 @@ import { Profile } from './components/Home/Profile/Profile';
 import { PostPage } from './components/Home/PostPage/PostPage';
 import { ProfilePage } from './pages/profile/profilepage';
 import { SingleTweetPage } from './pages/postpage/SinglePage';
-import { AriaPlusIcon } from './images/Ariaplus';
+
 
 function App() {
 
@@ -22,7 +22,6 @@ function App() {
         <Route path='/signin' element={<Signin/>}></Route>
         <Route path='/profile' element={<ProfilePage/>}></Route>
         <Route path='/tweet/:id' element={<SingleTweetPage/>}></Route>
-        <Route path='/images/Ariaplus' element={<AriaPlusIcon/>}></Route>
       </Routes>
     </div>
 
