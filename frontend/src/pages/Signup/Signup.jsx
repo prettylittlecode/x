@@ -1,5 +1,5 @@
 import "./signup.css";
-import { ariaplus } from "../../images/logo.svg";
+import { ariaplus } from "../../images/ariaplus.svg";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { SignupForm } from "../../components/auth/ManualSignup";
