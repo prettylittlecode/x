@@ -252,7 +252,9 @@
 @media screen and (max-width: 1000px) {
   .signup-container {
     flex-direction: column-reverse;
-    height: fit-content;
+    width: fit-content;
+    height: 800px;
+    padding-left: 45px;
   }
   .signup-container > div:nth-child(2) {
     width: 100%;
