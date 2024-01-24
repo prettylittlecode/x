@@ -1,6 +1,5 @@
 import "./signup.css"
 import React, { useState } from "react";
-import { Twitter } from '@material-ui/icons';
 import { ExternalAuth } from "components/auth/ExternalAuth";
 import "./signup.css";
 import { Twitter } from "@material-ui/icons";
