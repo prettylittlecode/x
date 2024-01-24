@@ -34,7 +34,7 @@ export const Signup = () => {
       <div className="signup-form-container">
         <div className="head-content">
           <div>
-            <img class="ariapluslogo" src="./images/ariaplus.svg" alt="" }} />
+            <img class="ariapluslogo" src="./images/ariaplus.svg" alt="" />
           </div>
           <div>
             <h1>Happening Now</h1>
