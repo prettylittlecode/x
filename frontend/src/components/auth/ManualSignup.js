@@ -79,7 +79,7 @@ export const SignupForm = ({ trigger, setTrigger }) => {
                     color: "white",
                 }} /></button>
                 <div className="back-btn">
-                    <Twitter style={
+                    <img src="./images/ariaplus.svg" style={
                         {
                             width: "30px",
                             height: "auto",
