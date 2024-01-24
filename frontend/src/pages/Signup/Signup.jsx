@@ -1,5 +1,5 @@
 import "./signup.css";
-import { AriaPlusIcon } from "./images/Ariaplus";
+import { ReactComponent as AriaPlusIcon} from "./assets/ariaplus.svg";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { SignupForm } from "../../components/auth/ManualSignup";
