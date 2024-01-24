@@ -9,8 +9,7 @@ import { Profile } from './components/Home/Profile/Profile';
 import { PostPage } from './components/Home/PostPage/PostPage';
 import { ProfilePage } from './pages/profile/profilepage';
 import { SingleTweetPage } from './pages/postpage/SinglePage';
-
-
+import { AriaPlusIcon } from './components/icons/AriaPlus';
 function App() {
 
   return (
