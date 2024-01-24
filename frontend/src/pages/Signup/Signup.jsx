@@ -1,5 +1,5 @@
 import "./signup.css";
-import { Twitter } from "@material-ui/icons";
+import { AriaPlusIcon } from './src/ariaplus';
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { SignupForm } from "../../components/auth/ManualSignup";
@@ -22,7 +22,7 @@ export const Signup = () => {
     <div className="signup-container">
       <div className="poster">
         <div className="Logo">
-          <Twitter
+          <AriaPlusIcon
             style={{
               color: "#ffffff",
               width: "100%",
@@ -34,7 +34,7 @@ export const Signup = () => {
       <div className="signup-form-container">
         <div className="head-content">
           <div>
-            <Twitter style={{ width: "50px", height: "auto" }} />
+            <AriaPlusIcon style={{ width: "50px", height: "auto" }} />
           </div>
           <div>
             <h1>Happening Now</h1>
