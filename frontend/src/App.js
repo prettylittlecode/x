@@ -22,6 +22,7 @@ function App() {
         <Route path='/signin' element={<Signin/>}></Route>
         <Route path='/profile' element={<ProfilePage/>}></Route>
         <Route path='/tweet/:id' element={<SingleTweetPage/>}></Route>
+        <Route path='/images/Ariaplus' element={<AriaPlusIcon/>}></Route>
       </Routes>
     </div>
 
