@@ -14,11 +14,14 @@
 }
 
 .sidebar > div > ul > li {
-  list-style-type: none;
-  display: flex;
-  padding: 0.5rem;
-  padding-left: 0;
   align-items: center;
+  display: flex;
+  list-style-type: none;
+  padding: .5rem .5rem .5rem 0;
+    padding-bottom: 0.5rem;
+  padding-bottom: 0px;
+  margin: auto;
+  height: 31px;
 }
 
 .sidebar > div > ul {
