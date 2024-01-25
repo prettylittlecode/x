@@ -84,7 +84,7 @@ export const SignupForm = ({ trigger, setTrigger }) => {
                             width: "50px",
                             height: "auto",
                             color: "white",
-                            margin-left: "-10px"
+                            marginleft: "-10px"
     
                         }
                     } />
