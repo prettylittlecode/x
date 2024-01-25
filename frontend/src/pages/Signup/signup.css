@@ -209,7 +209,7 @@
 }
 .back-btn {
   position: absolute;
-  left: 50%;
+  left: 44%;
   top: 5%;
 }
 
@@ -220,8 +220,10 @@
   gap: 2rem;
 }
 .form p {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: helvetica;
+  text-align: center;
 }
 .form .signup {
   display: flex;
@@ -231,17 +233,21 @@
 .signup div {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10px;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 15px;
 }
 .signup div input {
-  height: 60px;
-  width: 95%;
-  padding-left: 1rem;
-  border: 1px solid gray;
-  background-color: #000000;
+  background-color: #000;
+  border: 1px solid #242424;
+  border-radius: 10px;
   color: gray;
-  border-radius: 5px;
   font-size: 1rem;
+  height: 60px;
+  padding-left: 1rem;
+  width: 50%;
+  align-self: center;
 }
 .signup div input:focus {
   outline: 2px solid #1d9bf0;
@@ -253,14 +259,16 @@
   color: #1d9bf0;
   cursor: pointer;
 }
-
 .signup div button {
-  margin-top: 1rem;
-  padding: 0.8rem 0;
-  width: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  margin-top: 0rem;
+  padding: .8rem 0;
+  width: 55%;
+  background-color: white;
+  align-self: center;
+  border: 0px;
 }
 .signup div button:hover {
   background-color: rgba(255, 255, 255, 0.753);
