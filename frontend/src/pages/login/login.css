@@ -1,10 +1,14 @@
 .signin-container {
-  width: 100%;
-  height: 100vh;
-  background-color: #536471;
+ align-items: center;
+  background: url("https://th.bing.com/th/id/OIG3.8P9ivjVopzE72xJeuhII?pid=ImgGn");
+    background-repeat: repeat;
+    background-size: auto;
   display: flex;
+  height: 100vh;
   justify-content: center;
-  align-items: center;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .inner-wrapper {
@@ -19,6 +23,7 @@
   background-color: black;
   border-radius: 10px;
   color: white;
+  height: 85%;
 }
 .logo {
   width: fit-content;
@@ -38,11 +43,11 @@
   gap: 2rem;
 }
 .head p {
-  color: white;
-  font-size: 2rem;
-  font-weight: 500;
+ color: #fff;
+  font-size: 20px;
+  font-weight: 600;
   width: fit-content;
-  margin: auto;
+  font-family: helvetica;
 }
 .ext-auth {
   margin: auto;
@@ -57,37 +62,47 @@
   gap: 2rem;
 }
 .outer-form div {
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
-  width: 70%;
   margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  width: 70%;
+  margin-top: -25px;
+  margin-bottom: 10px;
+  font-family: helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
 }
 .outer-form div input {
-  height: 50px;
+  background-color: #000;
+  border: 1px solid #242424;
+  border-radius: 7px;
+  color: #fff;
   font-size: 1.1rem;
   font-weight: 500;
-  border: 1px solid #536471;
-  background-color: black;
-  border-radius: 7px;
-  padding: 0.5rem 0;
-  padding-left: 1rem;
-  color: white;
+  height: 50px;
+  padding: .5rem 0 .5rem 1rem;
 }
 .outer-form div button {
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
   height: 60px;
   padding: 1rem 0;
-  font-size: 1rem;
-  font-weight: 500;
-  border: none;
-  border-radius: 30px;
+  background-color: white;
+  cursor: pointer;
 }
 .outer-form div p span {
   color: #1d9bf0;
 }
 @media screen and (max-width: 768px) {
   .inner-wrapper {
-    width: 100%;
     height: 100vh;
+    width: 100%;
+    padding: 0px;
+    align-content: center;
+    justify-content: center;
   }
 }
