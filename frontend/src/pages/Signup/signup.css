@@ -281,12 +281,11 @@
     height: fit-content;
   }
   .signup-container > div:nth-child(2) {
-    display: none;
+    width: fit-content;
+    padding: 2rem 5rem;
   }
   .signup-container > div:nth-child(1) {
-   padding: 35px;
-   width: fit-content;
-   height: 830px;
+    display: none;
   }
   .popup-form {
     width: fit-content;
