@@ -12,7 +12,10 @@
   margin-left: -15px;
   color: white;
 }
-
+.ariaplusicon {
+  width: 40px;
+  padding: 25px;
+}
 .sidebar > div > ul > li {
   align-items: center;
   display: flex;
