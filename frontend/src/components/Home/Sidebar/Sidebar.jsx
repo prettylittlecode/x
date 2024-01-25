@@ -1,6 +1,7 @@
 import React,{useEffect, useRef} from 'react'
 import "./Sidebar.css"
 import SidebarOption from './SidebarOptions'
+import AriaPlusIcon from '../../components/icons/AriaPlus';
 import HomeIcon from '@mui/icons-material/Home';
 import TagRoundedIcon from '@mui/icons-material/TagRounded';
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
@@ -26,7 +27,7 @@ function Sidebar() {
         <div>
           <img class="ariaplusicon" src="./images/ariaplus.svg" alt="ariaplusicon" style={{marginRight: "-1rem"}}/>
           <ul>
-              <li onClick={()=> navigate("/home")}><SidebarOption active text="Explore" Icon={HomeIcon}/></li>
+              <li onClick={()=> navigate("/home")}><SidebarOption active text="Explore" Icon={AriaPlusIcon}/></li>
               <li><SidebarOption text="Explore" Icon={TagRoundedIcon}/></li>
               <li><SidebarOption text="Notifications" Icon={NotificationsNoneRoundedIcon}/></li>
               <li onClick={()=> navigate('/messages')}><SidebarOption text="Messages" Icon={MailOutlineRoundedIcon}/></li>
