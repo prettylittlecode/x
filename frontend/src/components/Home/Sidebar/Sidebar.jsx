@@ -26,10 +26,8 @@ function Sidebar() {
         <div>
           <img class="ariaplusicon" src="./images/ariaplus.svg" alt="ariaplusicon" style={{marginRight: "-1rem"}}/>
           <ul>
-            <div>
               <img class="homeicon" src="./images/ariaplus.svg"/>
-              <li onClick={()=> navigate("/home")}><SidebarOption active text="Explore" src="./images/ariaplua.svg"/></li>
-            </ul>
+              <li onClick={()=> navigate("/home")}><SidebarOption active text="Explore"/></li>
               <li><SidebarOption text="Explore" Icon={TagRoundedIcon}/></li>
               <li><SidebarOption text="Notifications" Icon={NotificationsNoneRoundedIcon}/></li>
               <li onClick={()=> navigate('/messages')}><SidebarOption text="Messages" Icon={MailOutlineRoundedIcon}/></li>
