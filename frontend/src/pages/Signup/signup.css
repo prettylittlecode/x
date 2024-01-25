@@ -281,8 +281,7 @@
     height: fit-content;
   }
   .signup-container > div:nth-child(2) {
-    width: fit-content;
-    padding: 2rem 5rem;
+    display: none;
   }
   .signup-container > div:nth-child(1) {
    padding: 35px;
