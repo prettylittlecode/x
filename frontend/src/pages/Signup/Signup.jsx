@@ -22,7 +22,7 @@ export const Signup = () => {
     <div className="signup-container">
       <div className="poster">
         <div className="Logo">
-          <img src="./images/ariaplus.svg" style={{ color: "#ffffff", width: "100%", height: "auto",}} />
+          <img class="largelogo" src="./images/ariaplus.svg" style={{ color: "#ffffff", width: "100%", height: "auto",}} />
         </div>
       </div>
       <div className="signup-form-container">
