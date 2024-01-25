@@ -1,12 +1,7 @@
 .feed {
-  flex: 0.47;
-  /* flex-grow: 0.47; */
-
-  /* border: 1px solid grey; */
-  /* min-width: fit-content; */
-  overflow-y: scroll;
-  overflow-x: hidden;
-  max-width: 700px;
+  flex: 0.47 1;
+  margin-left: auto;
+  width: 50%;
 }
 
 .feed::-webkit-scrollbar {
@@ -34,6 +29,7 @@
 }
 @media screen and (max-width: 768px) {
   .feed {
-    flex: 0.8;
+    flex: 0.8 1;
+    padding-right: 15px;
   }
 }
