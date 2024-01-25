@@ -81,9 +81,11 @@ export const SignupForm = ({ trigger, setTrigger }) => {
                 <div className="back-btn">
                     <img src="./images/ariaplus.svg" style={
                         {
-                            width: "30px",
+                            width: "50px",
                             height: "auto",
                             color: "white",
+                            margin-left: "-10px"
+    
                         }
                     } />
                 </div>
