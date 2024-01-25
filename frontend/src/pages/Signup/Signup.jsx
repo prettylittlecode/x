@@ -31,10 +31,13 @@ export const Signup = () => {
             <img class="ariapluslogo" src="./images/ariaplus.svg" alt="" />
           </div>
           <div>
-            <h1>Happening Now</h1>
+            <h1>Everything Here</h1>
           </div>
           <div>
-            <h2>Join Twitter today</h2>
+            <h2>Join Aria+ Now</h2>
+          </div>
+          <div>
+            <p class="frontpageinfo">In order to securely sign up you need an Aria+ ID, which can be issued here ID and subscribe to the plans here Subscribe, and check out our Digital Policies</p>
           </div>
         </div>
         <div className="signup-box">
