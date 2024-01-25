@@ -19,7 +19,7 @@
 }
 
 .poster {
-  background-image: url(https://s3.amazonaws.com/static.rogerebert.com/uploads/review/primary_image/reviews/the-world-to-come-movie-review-2021/the-world-to-come-movie-review-2021.jpg);
+  background-image: url(https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,11 +34,7 @@
   width: 100%;
   height: fit-content;
   max-width: 500px;
-  background-color: unset;
-
-}
-.largelogo {
-  background: none;
+  background-color: transparent;
 }
 
 .signup-form-container {
@@ -267,22 +263,21 @@
   background-color: rgba(255, 255, 255, 0.753);
 }
 @media screen and (max-width: 1000px) {
+  .signup-container {
+    flex-direction: column-reverse;
+    width: fit-content;
+    height: fit-content;
+  }
   .signup-container > div:nth-child(2) {
-    padding: 2rem 5rem;
-    padding-top: 2rem;
-    height: 600px;
-    padding-top: 10%;
-    margin-left: auto;
-}
-.signup-container > div:nth-child(2) {
     width: fit-content;
     padding: 2rem 5rem;
-}
-.signup-container > div:nth-child(1) {
+  }
+  .signup-container > div:nth-child(1) {
    padding: 35px;
    width: fit-content;
    height: 830px;
-}
-.popup-form {
+  }
+  .popup-form {
     width: fit-content;
+  }
 }
