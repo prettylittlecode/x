@@ -189,7 +189,7 @@
   position: relative;
   width: 60%;
   height: fit-content;
-  border-radius: 8px;
+  border-radius: 20px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -216,8 +216,9 @@
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 2rem;
+  justify-content: space-between;
+  width: 550px;
 }
 .form p {
   font-size: 20px;
