@@ -51,8 +51,9 @@
   justify-content: center;
 }
 .head-content > div:nth-child(2) h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-family: helvetica;
+  color: white;
 }
 .head-content > div:nth-child(3) h2 {
   font-size: 2rem;
