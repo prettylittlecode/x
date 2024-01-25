@@ -10,6 +10,13 @@
   background-color: black;
   color: white;
 }
+.frontpageinfo {
+  max-width: 350px;
+  font-size: 12px;
+  font-family: helvetica;
+  color: gray;
+  margin-top: 10px;
+}
 
 .poster {
   background-image: url(https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png);
@@ -49,6 +56,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 10%;
 }
 .head-content > div:nth-child(2) h1 {
   font-size: 40px;
@@ -56,7 +64,8 @@
   color: white;
 }
 .head-content > div:nth-child(3) h2 {
-  font-size: 2rem;
+  font-size: 20px;
+  color: white;
 }
 
 .signup-box {
