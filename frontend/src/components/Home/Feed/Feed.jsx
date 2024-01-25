@@ -31,7 +31,7 @@ function Feed() {
         {/* tweet box */}
         <TweetBox/>
       
-        <img class="headerimage" src="./images/" alt=""/>
+        <img class="headerimage" src="./images/wallpaperflare.com_wallpaper(11).jpg" alt=""/>
         {/* Posts  */}
         {tweets.map((el,idx)=>{
           return <Post key={el.id} id={el.id} post={el.data()}/>
