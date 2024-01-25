@@ -61,7 +61,6 @@ export const Signup = () => {
         <div>
           <SignupForm trigger={popup} setTrigger={setPopup} />
         </div>
-      </div>
     </div>
   );
 };
