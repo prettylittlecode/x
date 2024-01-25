@@ -31,7 +31,7 @@ function Feed() {
         {/* tweet box */}
         <TweetBox/>
       
-
+        <img class="headerimage" src="./images/" alt=""/>
         {/* Posts  */}
         {tweets.map((el,idx)=>{
           return <Post key={el.id} id={el.id} post={el.data()}/>
