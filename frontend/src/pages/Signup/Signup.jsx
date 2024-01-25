@@ -48,13 +48,12 @@ export const Signup = () => {
           </div>
         </div>
         
-          <div className="manual-signup">
-            <div className="manual-btn">
-              <button onClick={() => { setPopup(true) }}>Signup Manually</button>
+        <div className="signin-redirect-box">
+                <p>Already have an account?</p>
+                <button onClick={()=>{
+                    navigate('/signin');
+                }}>Signin</button>
             </div>
-          </div>
-        </div>
-        <div>
           <SignupForm trigger={popup} setTrigger={setPopup} />
         </div>
     </div>
