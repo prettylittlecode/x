@@ -19,7 +19,7 @@
 }
 
 .poster {
-  background-image: url(https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png);
+  background-image: url(https://s3.amazonaws.com/static.rogerebert.com/uploads/review/primary_image/reviews/the-world-to-come-movie-review-2021/the-world-to-come-movie-review-2021.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +34,11 @@
   width: 100%;
   height: fit-content;
   max-width: 500px;
-  background-color: transparent;
+  background-color: unset;
+
+}
+.largelogo {
+  background: none;
 }
 
 .signup-form-container {
