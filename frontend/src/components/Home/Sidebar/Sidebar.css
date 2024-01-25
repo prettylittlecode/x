@@ -1,16 +1,16 @@
 .sidebar {
-  border-right: 1px solid var(--twitter-background);
-  flex: 0.21;
-  /* flex-grow: 0.21; */
-  /* width: 21%; */
-  /* padding-left: 1.5vw; */
-  padding: 1.5rem;
-  padding-top: 0.2rem;
-  padding-right: 0.5rem;
   color: var(--twitter-text-color);
   display: flex;
+  flex: 0.21 1;
   flex-direction: column;
-  justify-content: space-between;
+  padding: .2rem .5rem 1.5rem 1.5rem;
+    padding-right: 0.5rem;
+    padding-left: 1.5rem;
+  position: fixed;
+  padding-left: 0px;
+  padding-right: 10px;
+  margin-left: -15px;
+  color: white;
 }
 
 .sidebar > div > ul > li {
