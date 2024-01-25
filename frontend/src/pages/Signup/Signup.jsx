@@ -41,6 +41,12 @@ export const Signup = () => {
           </div>
         </div>
         <div className="signup-box">
+         <div className="manual-signup">
+            <div className="manual-btn">
+              <button onClick={() => { setPopup(true) }}>Signup Manually</button>
+            </div>
+          </div>
+        </div>
           <div className="divider">
             <div></div>
             <div>or</div>
