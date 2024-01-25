@@ -24,7 +24,7 @@ function Sidebar() {
   return (
     <div className='sidebar'>
         <div>
-          <TwitterIcon style={{marginRight: "-1rem"}}/>
+          <img class="ariaplusicon" src="./images/ariaplus.svg" alt="ariaplusicon" style={{marginRight: "-1rem"}}/>
           <ul>
               <li onClick={()=> navigate("/home")}><SidebarOption active text="Explore" Icon={HomeIcon}/></li>
               <li><SidebarOption text="Explore" Icon={TagRoundedIcon}/></li>
