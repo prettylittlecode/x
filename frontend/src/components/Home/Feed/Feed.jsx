@@ -43,7 +43,7 @@ function Feed() {
         </div>
       </div>
 
-      <div id="ForYou" class="tabcontent" style="display: block;">
+      <div id="ForYou" class="tabcontent" style="display: block;"/>
         <div class="tabs-main-img" style="background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(&quot;https://prettylittlecode.github.io/w/i/feed/post/images/cover.jpg&quot;);margin-top: 10px;border-radius: 10px;width: auto;">
         </div>
           <meta charset="UTF-8">
