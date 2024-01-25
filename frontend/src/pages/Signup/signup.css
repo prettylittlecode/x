@@ -274,17 +274,15 @@
     padding-top: 10%;
     margin-left: auto;
 }
-}
-  .signup-container > div:nth-child(2) {
+.signup-container > div:nth-child(2) {
     width: fit-content;
     padding: 2rem 5rem;
-  }
-  .signup-container > div:nth-child(1) {
+}
+.signup-container > div:nth-child(1) {
    padding: 35px;
    width: fit-content;
    height: 830px;
-  }
-  .popup-form {
+}
+.popup-form {
     width: fit-content;
-  }
 }
