@@ -30,7 +30,7 @@ export const SignupForm = ({ trigger, setTrigger }) => {
 
         if (email && password) {
             createUserWithEmailAndPassword(auth, email, password).then(() => {
-                alert("User Signed Up successfully!")
+                alert("By clicking 'OK,' you are indicating your acceptance and agreement to adhere to our terms and conditions. We encourage you to carefully review these terms, as they outline the rules and guidelines that govern your use of the Aria+ platform. Additionally, your click signifies your consent to abide by the various policies we have in place, designed to ensure a secure and enjoyable experience for all users. If you have any questions or concerns about our terms or policies, please don't hesitate to reach out to our support team. Thank you for choosing Aria+; we look forward to having you as part of our community")
                 navigate('/signin');
             }).catch((err) => {
                 console.log(err.message);
