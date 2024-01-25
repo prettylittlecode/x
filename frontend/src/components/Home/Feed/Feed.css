@@ -13,6 +13,10 @@
 .feed::-webkit-scrollbar {
   display: none;
 }
+.headerimage {
+  width: -moz-available;
+  border-radius: 10px;
+}
 .feed_header {
   position: sticky;
   top: 0;
