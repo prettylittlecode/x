@@ -25,7 +25,7 @@ function Feed() {
   return (
     <div className="App">
       <Tabs>
-        <Tab label={"One"}>{"<div className='feed'>
+        <Tab label={"One"}>{" className='feed'>
 
         {/* Header */}
         <div className='feed_header'>
