@@ -25,7 +25,7 @@ function Feed() {
     <div className='feed'>
  {/* Header */}
  <div className='feed_header'>
-    <span onClick={() => setSelectedTab(0)} className={selectedTab === 0 ? 'active' : ''} style="font-size: 15px;font-family: helvetica;margin-right: 5px">Home</span>
+    <span onClick={() => setSelectedTab(0)} className={selectedTab === 0 ? 'active' : ''}>Home</span>
     <span onClick={() => setSelectedTab(1)} className={selectedTab === 1 ? 'active' : ''}>Tweet Box</span>
  </div>
 
