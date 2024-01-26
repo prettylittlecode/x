@@ -5,15 +5,15 @@ import { Tabs, Tab } from "react-twitter-tabs";
 import TweetBox from './TweetBox'
 import { onSnapshot, collection, query, orderBy } from "@firebase/firestore";
 import { database } from "../../../firebase/firebaseconfig"
+
 function Feed() {
+  const [tweets, setTweets] = useState([]);
 
-
-  const [tweets,setTweets] = useState([]);
-   useEffect(() => {
+  useEffect(() => {
     const unsubscribe = onSnapshot(
-      query(collection(database, "posts"), orderBy("timestamp","desc")),
+      query(collection(database, "posts"), orderBy("timestamp", "desc")),
       (snapshot) => {
-        setTweets(snapshot.docs);
+        setTweets(snapshot.docs.map((doc) => ({ id: doc.id, data: () => doc.data() })));
       }
     );
 
@@ -25,41 +25,27 @@ function Feed() {
   return (
     <div className="App">
       <Tabs>
-        <Tab label={"One"}>{" className='feed'>
+        <Tab label="One">
+          <div className='feed'>
+            {/* Header */}
+            <div className='feed_header'>
+              <span>Home</span>
+            </div>
 
-        {/* Header */}
-        <div className='feed_header'>
-            <span>Home</span>
-        </div>
+            {/* tweet box */}
+            <TweetBox />
 
-        {/* tweet box */}
-        <TweetBox/>
-      
-        <img class="headerimage" src="./images/wallpaperflare.com_wallpaper(11).jpg" alt=""/>
-        {/* Posts  */}
-        {tweets.map((el,idx)=>{
-          return <Post key={el.id} id={el.id} post={el.data()}/>
-        })}"}</Tab>
+            <img className="headerimage" src="./images/wallpaperflare.com_wallpaper(11).jpg" alt="" />
 
-        <Tab label={"Two"}>{"Two Content"}</Tab>
+            {/* Posts  */}
+            {tweets.map((el, idx) => {
+              return <Post key={el.id} id={el.id} post={el.data()} />
+            })}
+          </div>
+        </Tab>
 
-        <Tab label={"Three"}>{"Three Content"}</Tab>
+        {/* Add more content for other tabs here */}
 
-        <Tab label={"Four"}>{"Four Content"}</Tab>
-
-        <Tab label={"Five"}>{"five Content"}</Tab>
-
-        <Tab label={"Six"}>{"Six Content"}</Tab>
-
-        <Tab label={"Seven"}>{"seven Content"}</Tab>
-
-        <Tab label={"Eight"}>{"eight Content"}</Tab>
-
-        <Tab label={"Nine"}>{"nine Content"}</Tab>
-
-        <Tab label={"Ten"}>{"ten Content"}</Tab>
-
-        <Tab label={"Eleven"}>{"eleven Content"}</Tab>
       </Tabs>
     </div>
   )
