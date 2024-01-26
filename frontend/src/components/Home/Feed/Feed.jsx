@@ -4,15 +4,15 @@ import {Post} from './Post'
 import TweetBox from './TweetBox'
 import { onSnapshot, collection, query, orderBy } from "@firebase/firestore";
 import { database } from "../../../firebase/firebaseconfig"
-
 function Feed() {
-  const [tweets, setTweets] = useState([]);
 
-  useEffect(() => {
+  const [selectedTab, setSelectedTab] = useState(0);
+  const [tweets,setTweets] = useState([]);
+   useEffect(() => {
     const unsubscribe = onSnapshot(
-      query(collection(database, "posts"), orderBy("timestamp", "desc")),
+      query(collection(database, "posts"), orderBy("timestamp","desc")),
       (snapshot) => {
-        setTweets(snapshot.docs.map((doc) => ({ id: doc.id, data: () => doc.data() })));
+        setTweets(snapshot.docs);
       }
     );
 
@@ -22,31 +22,29 @@ function Feed() {
   }, [database]);
 
   return (
-    <div className="App">
-      <Tabs>
-        <Tab label="One">
-          <div className='feed'>
-            {/* Header */}
-            <div className='feed_header'>
-              <span>Home</span>
-            </div>
+    <div className='feed'>
+ {/* Header */}
+ <div className='feed_header'>
+    <span onClick={() => setSelectedTab(0)} className={selectedTab === 0 ? 'active' : ''}>Home</span>
+    <span onClick={() => setSelectedTab(1)} className={selectedTab === 1 ? 'active' : ''}>Tweet Box</span>
+ </div>
 
-            {/* tweet box */}
-            <TweetBox />
+ {/* Feed Tab */}
+ {selectedTab === 0 && (
+    <>
+      <TweetBox />
+      <img className="headerimage" src="./images/wallpaperflare.com_wallpaper(11).jpg" alt="" />
+      {/* Posts */}
+      {tweets.map((el, idx) => {
+        return <Post key={el.id} id={el.id} post={el.data()} />;
+      })}
+    </>
+ )}
 
-            <img className="headerimage" src="./images/wallpaperflare.com_wallpaper(11).jpg" alt="" />
+ {/* Tweet Box Tab */}
+ {selectedTab === 1 && <TweetBox />}
+</div>
 
-            {/* Posts  */}
-            {tweets.map((el, idx) => {
-              return <Post key={el.id} id={el.id} post={el.data()} />
-            })}
-          </div>
-        </Tab>
-
-        {/* Add more content for other tabs here */}
-
-      </Tabs>
-    </div>
   )
 }
 
