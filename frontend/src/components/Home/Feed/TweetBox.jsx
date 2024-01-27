@@ -115,7 +115,7 @@ function TweetBox() {
                 <LocationOnOutlinedIcon/>
             </div>
             <div className='tweetButton'>
-                <Button disabled={!input.trim() && !file} variant="contained" onClick={postTweet}>Tweet</Button>
+                <Button disabled={!input.trim() && !file} variant="contained" onClick={postTweet}>&</Button>
             </div>
         </div>
         {emojis && (
