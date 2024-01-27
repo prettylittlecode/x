@@ -43,10 +43,10 @@ export  const Profile = () => {
  }, [database]);
 
 
-  let type = "Tweets";
-  let userid = "Sunilraj_verma";
-  let join_date = "JANUARY 2022";
-  let place = "JAIPUR";
+  let type = "&";
+  let userid = "X";
+  let join_date = "24";
+  let place = "USA";
   return (
     <div className="profile">
       <div className="name_div">
