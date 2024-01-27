@@ -26,7 +26,11 @@ function Feed() {
  {/* Header */}
  <div className='feed_header'>
     <span onClick={() => setSelectedTab(0)} className={selectedTab === 0 ? 'active' : ''}>Home</span>
-    <span onClick={() => setSelectedTab(1)} className={selectedTab === 1 ? 'active' : ''}>Tweet Box</span>
+    <span onClick={() => setSelectedTab(1)} className={selectedTab === 1 ? 'active' : ''}>&</span>
+    <span onClick={() => setSelectedTab(1)} className={selectedTab === 2 ? 'active' : ''}>Trending</span>
+    <span onClick={() => setSelectedTab(1)} className={selectedTab === 3 ? 'active' : ''}>News</span>
+    <span onClick={() => setSelectedTab(1)} className={selectedTab === 4 ? 'active' : ''}>Sports</span>
+    <span onClick={() => setSelectedTab(1)} className={selectedTab === 5 ? 'active' : ''}>Entertainment</span>
  </div>
 
  {/* Feed Tab */}
