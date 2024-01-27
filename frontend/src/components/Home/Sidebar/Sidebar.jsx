@@ -11,7 +11,7 @@ import MusicIcon from '../../../components/icons/Music';
 import MarketIcon from '../../../components/icons/Market';
 import GameIcon from '../../../components/icons/Games';
 import ComsIcon from '../../../components/icons/Coms';
-import EventsIcon from '../../../omponents/icons/Events';
+import EventsIcon from '../../../components/icons/Events';
 import HomeIcon from '@mui/icons-material/Home';
 import TagRoundedIcon from '@mui/icons-material/TagRounded';
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
