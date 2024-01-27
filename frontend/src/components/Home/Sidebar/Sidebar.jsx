@@ -2,7 +2,7 @@ import React,{useEffect, useRef} from 'react'
 import "./Sidebar.css"
 import SidebarOption from './SidebarOptions'
 import AriaPlusIcon from '../../../components/icons/AriaPlus';
-import ExploreIcon from '../../../components/icons/Explore
+import ExploreIcon from '../../../components/icons/Explore';
 import HomeIcon from '@mui/icons-material/Home';
 import TagRoundedIcon from '@mui/icons-material/TagRounded';
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
