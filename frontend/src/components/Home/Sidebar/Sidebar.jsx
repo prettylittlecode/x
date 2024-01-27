@@ -3,6 +3,15 @@ import "./Sidebar.css"
 import SidebarOption from './SidebarOptions'
 import AriaPlusIcon from '../../../components/icons/AriaPlus';
 import ExploreIcon from '../../../components/icons/Explore';
+import BellIcon from '../../../components/icons/Notifications';
+import Messagesicon from '../../../components/icons/Messages';
+import AiIcon from '../../../components/icons/Ai';
+import TvIcon from '../../../components/icons/Tv';
+import MusicIcon from '../../../components/icons/Music';
+import MarketIcon from '../../../components/icons/Market;
+import GameIcon from '../../../omponents/icons/Games';
+import ComsIcon from '../../../components/icons/Coms';
+import EventsIcon from '../../../omponents/icons/Events';
 import HomeIcon from '@mui/icons-material/Home';
 import TagRoundedIcon from '@mui/icons-material/TagRounded';
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
@@ -28,14 +37,15 @@ function Sidebar() {
         <div>
           <img class="ariaplusicon" src="./images/ariaplus.svg" alt="ariaplusicon" style={{marginRight: "-1rem"}}/>
           <ul>
-              <li onClick={()=> navigate("/home")}><SidebarOption active text="Explore" Icon={AriaPlusIcon}/></li>
-              <li><SidebarOption text="Explore" Icon={ExploreIcon}/></li>
-              <li><SidebarOption text="Notifications" Icon={NotificationsNoneRoundedIcon}/></li>
-              <li onClick={()=> navigate('/messages')}><SidebarOption text="Messages" Icon={MailOutlineRoundedIcon}/></li>
-              <li> <SidebarOption text="Bookmarks" Icon={BookmarkBorderRoundedIcon}/></li>
-              <li><SidebarOption text="Lists" Icon={ArticleOutlinedIcon}/></li>
+              <li onClick={()=> navigate("/home")}><SidebarOption text="Explore" Icon={ExploreIcon}/></li>
+              <li><SidebarOption text="Notifications" Icon={BellIcon}/></li>
+              <li onClick={()=> navigate('/messages')}><SidebarOption text="Messages" Icon={MessagesIcon}/></li>
+              <li> <SidebarOption text="Ai" Icon={AiIcon}/></li>
+              <li><SidebarOption text="tv" Icon={TvIcon}/></li>
+              <li><SidebarOption text="Music" Icon={MusicIcon}/></li>
+              <li><SidebarOption text="Market" Icon={MarketIcon}/></li>
+              <li><SidebarOption text="Games" Icon={GameIcon}/></li>
               <li onClick={()=> navigate('/profile')}><SidebarOption text="Profile" Icon={PermIdentityOutlinedIcon}/></li>
-              <li><SidebarOption text="More" Icon={PendingOutlinedIcon}/></li>
 
               <Fab color="primary" aria-label="add">
                 <p>Tweet</p>
