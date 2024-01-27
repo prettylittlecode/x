@@ -12,15 +12,17 @@
   border-radius: 10px;
 }
 .active {
-  border-bottom: 4px solid dodgerblue;
-  border-radius: 5px;
-  width: fit-content;
-  justify-content: center;
   align-content: center;
   align-self: center;
-  justify-self: center;
+  border-bottom: 4px solid blue;
+  border-radius: 3px;
   display: flex;
+  justify-content: center;
+  justify-self: center;
   padding-bottom: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: 90px;
 }
 .feed_header {
   border: 1px solid #303030;
@@ -36,6 +38,9 @@
   margin-top: 15px;
   gap: 10px;
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+
 }
 
 @media screen and (max-width: 1000px) {
