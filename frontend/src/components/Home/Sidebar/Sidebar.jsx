@@ -4,7 +4,7 @@ import SidebarOption from './SidebarOptions'
 import AriaPlusIcon from '../../../components/icons/AriaPlus';
 import ExploreIcon from '../../../components/icons/Explore';
 import BellIcon from '../../../components/icons/Notifications';
-import Messagesicon from '../../../components/icons/Messages';
+import MessagesIcon from '../../../components/icons/Messages';
 import AiIcon from '../../../components/icons/Ai';
 import TvIcon from '../../../components/icons/Tv';
 import MusicIcon from '../../../components/icons/Music';
