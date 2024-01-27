@@ -3,26 +3,39 @@
 } */
 
 .profile {
-  flex: 0.47 1;
+  flex: 0.51 1;
   max-width: fit-content;
   overflow-y: scroll;
   margin-left: auto;
+  color: white;
+}
+.username {
+  margin-top: 10px;
+  margin-left: -12px;
+  font-size: 14px;
 }
 .profile::-webkit-scrollbar {
   display: none;
 }
 .profile_name {
-  font-size: 20px;
-  color: #0f1419;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  color: white;
+  font-family: helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+.profile_back_arrow {
+  color: white;
 }
 .name_div {
   display: flex;
   padding: 10px;
-}
-.profile_back_arrow {
-  padding-right: 20px;
+    padding-left: 0px;
+  color: gray;
+  margin-left: -25px;
+  fotn: f;
+  font-size: 13px;
+  font-weight: 600;
 }
 .MuiSvgIcon-root {
   font-size: small;
@@ -40,8 +53,7 @@
 }
 .profile_background {
   width: 100%;
-  /* background-size: cover; */
-  /* position: absolute; */
+  border-radius: 10px;
 }
 
 .profile_pic_div {
@@ -68,17 +80,26 @@
   text-align: left;
   font-weight: bold;
   margin-bottom: 1px;
+  font-size: 20px;
 }
 .editprofile_btn {
+ color: white;
+  background: none;
+    background-color: rgba(0, 0, 0, 0);
+  background-color: unset;
+  display: flex;
+  border: 2px solid;
+  width: 150px;
   float: right;
-  margin-right: 50px;
-  margin-top: -110px;
+  justify-content: center;
+  border-radius: 10px;
 }
 .editprofile_btn > button {
   background-color: transparent;
   padding: 10px 20px;
   border-radius: 25px;
   border: 1px solid var(--twitter-background);
+  color: white;
 }
 .profile_place_div {
   display: flex;
@@ -101,6 +122,7 @@
 .profile_post_header {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 .profile_post_header div {
   border: 1px solid var(--twitter-background);
