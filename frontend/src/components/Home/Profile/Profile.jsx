@@ -43,7 +43,7 @@ export  const Profile = () => {
  }, [database]);
 
 
-  let type = "&";
+  let type = "&'s";
   let userid = "X";
   let join_date = "24";
   let place = "USA";
@@ -85,7 +85,7 @@ export  const Profile = () => {
       <div className="profile_place_div">
         <LocationOnOutlinedIcon /> <p className="center_profile">{place} </p>
         <DateRangeRoundedIcon />
-        <p className="center_profile">Joined {join_date} </p>
+        <p className="center_profile"> {join_date} </p>
       </div>
       <div className="profile_follwer_div">
         <p>{50} Following</p>
