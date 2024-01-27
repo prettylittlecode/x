@@ -8,7 +8,7 @@ import Messagesicon from '../../../components/icons/Messages';
 import AiIcon from '../../../components/icons/Ai';
 import TvIcon from '../../../components/icons/Tv';
 import MusicIcon from '../../../components/icons/Music';
-import MarketIcon from '../../../components/icons/Market;
+import MarketIcon from '../../../components/icons/Market';
 import GameIcon from '../../../omponents/icons/Games';
 import ComsIcon from '../../../components/icons/Coms';
 import EventsIcon from '../../../omponents/icons/Events';
