@@ -48,6 +48,9 @@
   margin: 0;
   /* position:absolute; */
   scroll-behavior: smooth;
+  max-height: 300px;
+  height: 280px;
+  display: flex;
 
   /* border: 1px red solid; */
 }
