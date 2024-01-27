@@ -27,16 +27,15 @@ function Feed() {
  <div className='feed_header'>
     <span onClick={() => setSelectedTab(0)} className={selectedTab === 0 ? 'active' : ''}>Home</span>
     <span onClick={() => setSelectedTab(1)} className={selectedTab === 1 ? 'active' : ''}>&</span>
-    <span onClick={() => setSelectedTab(1)} className={selectedTab === 2 ? 'active' : ''}>Trending</span>
-    <span onClick={() => setSelectedTab(1)} className={selectedTab === 3 ? 'active' : ''}>News</span>
-    <span onClick={() => setSelectedTab(1)} className={selectedTab === 4 ? 'active' : ''}>Sports</span>
-    <span onClick={() => setSelectedTab(1)} className={selectedTab === 5 ? 'active' : ''}>Entertainment</span>
+    <span onClick={() => setSelectedTab(2)} className={selectedTab === 2 ? 'active' : ''}>Trending</span>
+    <span onClick={() => setSelectedTab(3)} className={selectedTab === 3 ? 'active' : ''}>News</span>
+    <span onClick={() => setSelectedTab(4)} className={selectedTab === 4 ? 'active' : ''}>Sports</span>
+    <span onClick={() => setSelectedTab(5)} className={selectedTab === 5 ? 'active' : ''}>Entertainment</span>
  </div>
 
  {/* Feed Tab */}
  {selectedTab === 0 && (
     <>
-      <TweetBox />
       <img className="headerimage" src="./images/wallpaperflare.com_wallpaper(11).jpg" alt="" />
       {/* Posts */}
       {tweets.map((el, idx) => {
