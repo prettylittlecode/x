@@ -63,7 +63,7 @@ export  const Profile = () => {
       <div className="profile_background_div">
         <img
           className="profile_background"
-          src="https://pbs.twimg.com/profile_banners/424147534/1366933847/600x200"
+          src="https://media.istockphoto.com/id/1413630345/vector/illustration-of-flying-american-flag-memorial-day-or-constitution-day-of-united-states.jpg?s=612x612&w=0&k=20&c=9gakpue4Kksgin5HIDPhB_Y-AADbO5LDzPNaTSX20MU="
           alt=""
         />
       </div>
@@ -88,8 +88,8 @@ export  const Profile = () => {
         <p className="center_profile"> {join_date} </p>
       </div>
       <div className="profile_follwer_div">
-        <p>{50} Following</p>
-        <p>{50} Followers</p>
+        <p>{"X"} Following</p>
+        <p>{"X"} Followers</p>
       </div>
       <div className="profile_post_header">
         <div className="tweets">Tweets</div>
