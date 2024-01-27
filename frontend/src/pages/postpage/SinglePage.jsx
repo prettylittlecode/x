@@ -1,5 +1,6 @@
 import Feed from "../../components/Home/Feed/Feed";
 import Sidebar from "../../components/Home/Sidebar/Sidebar";
+import ExploreIcon from "../../components/icons/Explore";
 import Widgets from "../../components/Home/Widgets/Widgets";
 import { useNavigate } from "react-router-dom";
 import "../home/Home.css";
