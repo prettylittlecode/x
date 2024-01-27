@@ -1,12 +1,11 @@
 .sidebarOption {
-  /* color: #50b7f5; */
-  display: flex;
   align-items: center;
   cursor: pointer;
+  display: flex;
   font-size: 20px;
-  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
+  background-color: unset;
 }
 
 .sidebarOption > .MuiSvgIcon-root {
